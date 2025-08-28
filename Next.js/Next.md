@@ -10,8 +10,23 @@
 8. Would you like to customize the import alias (`@/*` by default)? **No**
 9. cd my-app
 10. npm install tailwindcss @tailwindcss/postcss postcss
+11. Criar o postcss.config.mjs (Colocar o código depois)
+'''
+const config = {
+    plugins: {
+        "@tailwindcss/postcss": {},
+    },
+};
+
+export default config;
+'''tsx
+12. globals.css (dentro da pasta app) e colocar o **@import 'tailwindcss';**
+13. Adicionar no layout.tsx (dentro da pasta app) o **import './globals.css'**
+11. npx shadcn@latest init
 
 
-**Extensões Importante: Tailwind CSS IntelliSense e Prettier**
+**Extensões Importante: Tailwind CSS IntelliSense, Prettier e Colorize**
+
+**O Prettier no linux funciona com _ctrl+shift+i_**
 
 **LEMBRANDO QUE PARA RODAR É SÓ METER _npm run dev_**
