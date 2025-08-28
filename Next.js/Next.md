@@ -11,7 +11,7 @@
 9. cd my-app
 10. npm install tailwindcss @tailwindcss/postcss postcss
 11. Criar o postcss.config.mjs (Colocar o código depois)
-'''
+```tsx
 const config = {
     plugins: {
         "@tailwindcss/postcss": {},
@@ -19,7 +19,7 @@ const config = {
 };
 
 export default config;
-'''tsx
+```
 12. globals.css (dentro da pasta app) e colocar o **@import 'tailwindcss';**
 13. Adicionar no layout.tsx (dentro da pasta app) o **import './globals.css'**
 14. npx shadcn@latest init
