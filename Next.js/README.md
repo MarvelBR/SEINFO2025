@@ -31,3 +31,4 @@ export default config;
 **O Prettier no linux funciona com _ctrl+shift+i_**
 
 **LEMBRANDO QUE PARA RODAR É SÓ METER _npm run dev_**
+**E quando clonar instalar o node com o _npm install_**
