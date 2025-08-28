@@ -32,3 +32,6 @@ export default config;
 
 **LEMBRANDO QUE PARA RODAR É SÓ METER _npm run dev_**
 **E quando clonar instalar o node com o _npm install_**
+
+
+TESTE
