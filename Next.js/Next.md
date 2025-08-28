@@ -22,7 +22,8 @@ export default config;
 '''tsx
 12. globals.css (dentro da pasta app) e colocar o **@import 'tailwindcss';**
 13. Adicionar no layout.tsx (dentro da pasta app) o **import './globals.css'**
-11. npx shadcn@latest init
+14. npx shadcn@latest init
+15. npx shadcn@latest add button card input form sonner
 
 
 **Extensões Importante: Tailwind CSS IntelliSense, Prettier e Colorize**

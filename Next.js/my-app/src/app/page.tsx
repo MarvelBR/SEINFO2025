@@ -7,7 +7,7 @@ export default function Home() {
       <div className="bg-red-500">
         Tela Inicial
         <Button asChild>
-          <Link href={"/auth/sign-up"}>Voltar a tela inicial</Link>
+          <Link href={"/auth/sign-up"}>Tela de Cadastro</Link>
         </Button>
       </div>
     </main>
