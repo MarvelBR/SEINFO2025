@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { InputPassword } from "@/components/ui/input";
 import {
   Card,
   CardDescription,
@@ -6,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
+import SignUpForm from "./components/sign-up-form";
 
 const SignUpPage = () => {
   return (
@@ -17,6 +19,7 @@ const SignUpPage = () => {
             Insira suas informações para realizar o cadastro
           </CardDescription>
         </CardHeader>
+        <SignUpForm />
       </Card>
       <Button asChild>
         <Link href={"/"}>Voltar a tela inicial</Link>
