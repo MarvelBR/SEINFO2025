@@ -27,6 +27,7 @@ export default config;
 16. npm install react-hook-form zod @hookform/resolvers
 17. criar um .env.local com **NEXT_PUBLIC_API_URL= _http://172.16.0.119:3333_**
 - o http:// ai o ip da maquina : a porta
+- ficaria tipo NEXT_PUBLIC_API_URL=http://localhost:3333
 
 
 **Extensões Importante: Tailwind CSS IntelliSense, Prettier e Colorize**
