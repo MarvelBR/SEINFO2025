@@ -4,6 +4,7 @@ import {
   TSignUpInputSchema,
   TSignUpOutputSchema,
 } from "@/@core/modules/auth/domain/sign-up.entity";
+import { auth } from "@/@core/modules/auth/infra/container.registry";
 import { signUpSchema } from "@/@core/modules/auth/schema/sign-up.schema";
 import { Button } from "@/components/ui/button";
 import { CardContent, CardFooter } from "@/components/ui/card";
@@ -30,9 +31,8 @@ const SignUpForm = () => {
     },
   });
 
-  const onHandleSubmit = (formData: TSignUpInputSchema) => {
-    const parsed: TSignUpOutputSchema = signUpSchema.parse(formData);
-    console.log({ parsed });
+  const onHandleSubmit = async (formData: TSignUpInputSchema) => {
+    await auth.signUp.execute(formData);
   };
 
   return (
@@ -99,6 +99,9 @@ const SignUpForm = () => {
           <Button type="submit">Cadastrar</Button>
           <Button type="button">
             <Link href={"/auth/sign-in"}>Já possuo uma conta</Link>
+          </Button>
+          <Button asChild>
+            <Link href={"/"}>Voltar a tela inicial</Link>
           </Button>
         </CardFooter>
       </form>

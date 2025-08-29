@@ -11,7 +11,7 @@ import SignUpForm from "./components/sign-up-form";
 
 const SignUpPage = () => {
   return (
-    <section className="flex h-screen w-screen items-center justify-center bg-amber-300 px-5">
+    <section className="flex h-screen w-screen items-center justify-center bg-blue-500 px-5">
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle>Crie sua conta</CardTitle>
@@ -21,13 +21,8 @@ const SignUpPage = () => {
         </CardHeader>
         <SignUpForm />
       </Card>
-      <Button asChild>
-        <Link href={"/"}>Voltar a tela inicial</Link>
-      </Button>
     </section>
   );
 };
-
-//ANOTAR OQ É CADA COISA DO TAILWIND
 
 export default SignUpPage;

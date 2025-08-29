@@ -25,6 +25,8 @@ export default config;
 14. npx shadcn@latest init
 15. npx shadcn@latest add button card input form sonner
 16. npm install react-hook-form zod @hookform/resolvers
+17. criar um .env.local com **NEXT_PUBLIC_API_URL= _http://172.16.0.119:3333_**
+- o http:// ai o ip da maquina : a porta
 
 
 **Extensões Importante: Tailwind CSS IntelliSense, Prettier e Colorize**
@@ -33,3 +35,12 @@ export default config;
 
 **LEMBRANDO QUE PARA RODAR É SÓ METER _npm run dev_**
 **E quando clonar instalar o node com o _npm install_**
+
+
+## Importante
+
+**ESTUDAR**
+1. A ***Clean Arquiteture***
+- No caso seria a separação das pastas e etc
+
+2. Dar uma revisada nos arquivos .ts e .tsx
